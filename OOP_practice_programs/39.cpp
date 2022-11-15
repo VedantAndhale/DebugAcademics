@@ -4,18 +4,18 @@ Created By Vedant Andhale (@VedantAndhale)*/
 #include <iostream>
 using namespace std;
 
+int gcd (int a, int b)
+{
+    if(a%b==0)
+        return b;
+    return gcd(b, a % b);
+}
 int main()
 {
-    int num11, num12, gcd = 1;
+    int num11, num12;
     cout << "Enter two Number : ";
     cin >> num11 >> num12;
-    for (int i = 1; i <= num11 || i <= num12; i++)
-    {
-        if (num11 % i == 0 && num12 % i == 0)
-            gcd = i;
-    }
-
-    cout << "The GCD is " << gcd;
+    cout << "The GCD is " << gcd(num11,num12);
 
     return 0;
 }

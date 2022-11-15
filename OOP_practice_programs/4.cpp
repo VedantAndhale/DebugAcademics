@@ -4,7 +4,12 @@ Created By Vedant Andhale (@VedantAndhale)*/
 #include <iostream>
 using namespace std;
 
-int add(int num1);
+int add(int num1)
+{
+    if (num1 != 0)
+        return num1 + add(num1 - 1);
+    return 0;
+}
 
 int main()
 {
@@ -18,12 +23,7 @@ int main()
     return 0;
 }
 
-int add(int num1)
-{
-    if (num1 != 0)
-        return num1 + add(num1 - 1);
-    return 0;
-}
+
 /*output
 Enter a integer: 5
 Sum =  15
