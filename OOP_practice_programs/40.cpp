@@ -1,4 +1,4 @@
-/*39.C++ Program to Find GCD  .
+/*40.C++ Program to Find LCM  .
 Created By Vedant Andhale (@VedantAndhale)*/
 
 #include<iostream>
@@ -10,9 +10,9 @@ int gcd(int a, int b) {
 }
 int main() {
    int a = 7, b = 5;
-   cout<<"GCD of "<< a <<" and "<< b <<" is "<< gcd(a, b);
+   cout<<"LCM of "<< a <<" and "<< b <<" is "<< (a*b)/gcd(a, b);
    return 0;
 }
 /*Output
-GCD of 7 and 5 is 1
+LCM of 7 and 5 is 35
 */
