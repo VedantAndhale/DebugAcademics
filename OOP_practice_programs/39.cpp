@@ -10,9 +10,9 @@ int gcd(int a, int b) {
 }
 int main() {
    int a = 7, b = 5;
-   cout<<"LCM of "<< a <<" and "<< b <<" is "<< (a*b)/gcd(a, b);
+   cout<<"GCD of "<< a <<" and "<< b <<" is "<< gcd(a, b);
    return 0;
 }
 /*Output
-LCM of 7 and 5 is 35
+LCM of 7 and 5 is 1
 */
