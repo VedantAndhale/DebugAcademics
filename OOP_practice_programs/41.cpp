@@ -25,7 +25,7 @@ int main()
     return 0;
 }
 /*Output
-Enter a number: 444
- The reverse of the number is: 444
+Enter a number: 432
+ The reverse of the number is: 234
 
  */
