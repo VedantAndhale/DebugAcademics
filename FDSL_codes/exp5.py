@@ -1,4 +1,3 @@
-
 def partition(per,lo,hi):
 	if(lo<hi):
 		pivot=lo
@@ -25,7 +24,7 @@ def quicksort(per,lo,hi):
 		quicksort (per,pi+1,hi)
 		
 per=[]
-n=int(input("Enter the frist year count "))
+n=int(input("Enter the frist year count : "))
 for i in range (n):
 	m=float(input("Enter the student %i percentage"%(i+1)))
 	per.append(m)

@@ -34,6 +34,7 @@ print(diff(u,i))
 
 #C
 diffcb=diff(c,b)
+
 print(diff(diffcb,a))
 
 #D
