@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to an external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
     <title>Tabbed UI</title>
 </head>
 <body>
+    <!-- Title for our tabbed interface -->
     <div class="title"><h1>Tabbed UI</h1></div>
     <div class="tab-container">
+        <!-- Section for tab buttons -->
         <div class="tab-buttons">
+            <!-- Buttons for switching between Text, Image, and Video tabs -->
             <button id="text-tab" class="active">Text</button>
             <button id="image-tab">Image</button>
             <button id="video-tab">Video</button>
         </div>
+        <!-- Section for tab content -->
         <div class="tab-content">
-            <div id="text-content" class="tab-item active">This is the text tab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolor molestiae praesentium expedita tempore fugiat. Quasi neque amet sapiente voluptas impedit minus laboriosam repudiandae aut, laborum commodi consequatur tempora beatae.</div>
-            <div id="image-content" class="tab-item"><img src="https://images.pexels.com/photos/7775641/pexels-photo-7775641.jpeg" alt=""width="260" height="150"></div>
+            <!-- Content for the Text tab -->
+            <div id="text-content" class="tab-item active">This is the text tab. Lorem ipsum ...</div>
+            <!-- Content for the Image tab -->
+            <div id="image-content" class="tab-item">
+                <img src="https://images.pexels.com/photos/7775641/pexels-photo-7775641.jpeg" alt="" width="260" height="150">
+            </div>
+            <!-- Content for the Video tab -->
             <div id="video-content" class="tab-item">
                 <iframe width="260" height="150" src="https://www.youtube.com/embed/WQdqgrWvy6g?si=4eiDSqBb4GKmbOeV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </div>
+    <!-- Include a JavaScript file for functionality -->
     <script src="script.js"></script>
 </body>
 </html>
