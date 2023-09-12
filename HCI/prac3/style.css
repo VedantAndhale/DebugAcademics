@@ -1,31 +1,36 @@
 /* styles.css */
+
+/* Center-align the content vertically and horizontally */
 body {
-    text-align: center; /* Center-align the content */
-    height: 100vh;
-    margin: 0;
+    text-align: center;
+    height: 100vh; /* Ensure the page takes up the full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
+/* Style for the tab buttons */
 .tab-buttons {
-    display: block; /* Change from flex to block */
+    display: block; /* Change the display to "block" to stack the buttons vertically */
     text-align: center; /* Center-align the buttons */
 }
 
+/* Styling for all buttons */
 button {
-    padding: 10px 20px;
-    background-color: #eee;
-    border: none;
-    cursor: pointer;
-    display: inline-block; /* Make buttons inline-block to center them */
+    padding: 10px 20px; /* Add padding to make buttons look better */
+    background-color: #eee; /* Set a light gray background color */
+    border: none; /* Remove button borders */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    display: inline-block; /* Make buttons inline-block to center them horizontally */
     margin: 0 auto; /* Center-align buttons horizontally */
 }
 
+/* Style for each tab's content */
 .tab-item {
-    display: none;
-    text-align: center;
-    padding: 20px;    
+    display: none; /* Hide tab content by default */
+    text-align: center; /* Center-align the content */
+    padding: 20px; /* Add padding around the content */
 }
 
+/* Display the active tab content */
 .tab-item.active {
-    display: block;
+    display: block; /* Show the active tab content */
 }
-
