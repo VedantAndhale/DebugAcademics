@@ -1,0 +1,31 @@
+/* styles.css */
+body {
+    text-align: center; /* Center-align the content */
+    height: 100vh;
+    margin: 0;
+}
+
+.tab-buttons {
+    display: block; /* Change from flex to block */
+    text-align: center; /* Center-align the buttons */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Make buttons inline-block to center them */
+    margin: 0 auto; /* Center-align buttons horizontally */
+}
+
+.tab-item {
+    display: none;
+    text-align: center;
+    padding: 20px;    
+}
+
+.tab-item.active {
+    display: block;
+}
+
