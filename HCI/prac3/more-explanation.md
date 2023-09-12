@@ -13,3 +13,5 @@ JavaScript (script.js)
     In the `click` event function, it removes the active class from all buttons and tab content items to hide them.
     It then adds the active class to the clicked button and its corresponding tab content item to display them.
     Lastly, it simulates a click on the Text tab button to initially show the Text tab content when the page loads.
+
+Live Demo Link : https://vedantandhale.github.io/DebugAcademics/HCI/prac3/
