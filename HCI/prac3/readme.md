@@ -1,4 +1,4 @@
-
+More explanation :
 HTML (index.html):
     Defines the structure of the web page, including the title and the layout for the tabbed interface.
     Contains buttons for switching between tabs (Text, Image, Video) and the content to display for each tab.
