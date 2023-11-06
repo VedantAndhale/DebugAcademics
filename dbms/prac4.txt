@@ -1,0 +1,43 @@
+create table borrowerr(rollin int(11), name varchar(20),dateofIssue date, bname char(20),status char(1));
+
+alter table borrowerr modify column rollin int(11) primary key auto_increment;
+
+create table finee(rollin int(11),fdate date, amt int(11), foreign key(rollin) references borrowerr(rollin));
+
+insert into borrowerr values(1,'a', '2020-11-01','java', 'I'),(2,'b', '2020-10-15','networking','I'),(3,'c', '2020-10-01','dbms', 'I'),(4,'d','2020-09-22','cn','I');
+
+select *from borrowerr;
+
+delimiter $
+ create procedure finee_calculatiooonnn(IN rno int(3), bname char(20))
+ begin
+ declare i_date date;
+ declare diff int;
+ declare fine_amt int;
+ declare exit handler for sqlexception select 'Table not found';
+ select dateofIssue into i_date from borrowerr where rollin = rno and bname = bname;
+ select datediff(curdate(),i_date) into diff;
+ if(diff > 15 and diff <= 30) then
+ set fine_amt = diff*5;
+ insert into finee values(rno,curdate(),fine_amt);
+ elseif(diff>30) then
+ set fine_amt = 15 * 5 + (diff-30)*50;
+ insert into fine values(rno, curdate(),fine_amt);
+ end if;
+ update borrowerr set status = 'R' where rollin = rno and bname = bname;
+ end;
+ $
+ 
+ delimiter ;
+
+call finee_calculatiooonnn(3,'dbms');
+
+select *from finee ;
+
+select *from borrowerr;
+
+ 
+ 
+ 
+ 
+
